@@ -1,1 +1,1 @@
-Projeto CRUD com AngularJS
+Conceitos básicos de AngularJS
