@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta charset="utf-8" />
+    <title>Campeonato</title>
+    <script src="lib/angular.js"></script>
+</head>
+<body>
+    <div>
+        <h2>ng-disabled</h2>
+        <label>Clique aqui => <input type="checkbox" ng-model="marcado" /> </label>
+        <br />
+        <button ng-disabled="marcado">Sair da aplicação</button>
+        {{marcado}}
+    </div>
+    <br />
+    <div>
+        <h2>ng-click</h2>
+        <button ng-click="contar=contar+1" ng-init="contar=0">Incrementar</button>
+        <br />
+        {{contar}}
+    </div>
+    <br />
+
+    <div>
+        <h2>ng-src</h2>
+        <img ng-src="Imagens/palmeiras.png" style="width:48px; height:48px" />
+        <img ng-src="Imagens/vasco.png" style="width:48px; height:48px" />
+    </div>
+</body>
+</html>
