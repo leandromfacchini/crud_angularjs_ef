@@ -68,6 +68,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Exemplo1.html" />
+    <Content Include="Exemplo2.html" />
+    <Content Include="Exemplo3.html" />
+    <Content Include="lib\angular.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +85,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scripts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

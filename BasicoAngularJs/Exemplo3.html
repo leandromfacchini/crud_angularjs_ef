@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta charset="utf-8" />
+    <title>Utilizando ng-repeat</title>
+    <script src="lib/angular.js"></script>
+</head>
+<body ng-init="Times=['Cruzeiro','Palmeiras','Atlético','Vasco']">
+    <h4>Utilizando ng-repeat</h4>
+    <table border="1">
+        <tr ng-repeat="time in  Times">
+            <td>{{time}}</td>
+        </tr>
+    </table>
+</body>
+</html>
