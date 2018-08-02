@@ -69,12 +69,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Campeonato.html" />
+    <Content Include="CampeonatoBrasileiro.html" />
     <Content Include="Exemplo1.html" />
     <Content Include="Exemplo2.html" />
     <Content Include="Exemplo3.html" />
     <Content Include="Imagens\atlético.jpeg" />
     <Content Include="Imagens\cruzeiro.jpg" />
     <Content Include="Imagens\palmeiras.png" />
+    <Content Include="Imagens\saopaulo.jpg" />
     <Content Include="Imagens\vasco.png" />
     <Content Include="lib\angular.js" />
     <Content Include="lib\css\bootstrap-theme.css" />
