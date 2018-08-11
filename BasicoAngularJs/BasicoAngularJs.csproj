@@ -89,6 +89,8 @@
     <Content Include="lib\js\bootstrap.js" />
     <Content Include="lib\js\bootstrap.min.js" />
     <Content Include="lib\js\npm.js" />
+    <Content Include="Ordenacao.html" />
+    <Content Include="UsandoFilter.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

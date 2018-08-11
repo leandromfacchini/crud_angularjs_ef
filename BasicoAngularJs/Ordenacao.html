@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html ng-app="filtros">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-locale_pt-br.js"></script>
+
+    <link href="lib/css/bootstrap.css" rel="stylesheet" />
+
+    <script>
+
+        var app = angular.module("filtros", []).controller("filtrosCtrl", function ($scope) {
+
+            $scope.funcionarios = [
+                { nome: "Leandro", nascimento: new Date("November 22 1988"), sexo: "Masculino", salario: 2500.78 },
+                { nome: "Bruna", nascimento: new Date("December 09 1987"), sexo: "Feminino", salario: 2890.78 },
+                { nome: "Théo", nascimento: new Date("September 09 2018"), sexo: "Masculino", salario: 32897.99 },
+                { nome: "Joaquim", nascimento: new Date("November 15 2024"), sexo: "Masculino", salario: 32899.89 },
+            ];
+
+            $scope.hoje = new Date();
+            $scope.alfabeto = "abcdefghijklmnopqrstuvwxyz";
+            $scope.numeroLInhas = 3;
+            $scope.coluna = 'nome';
+        });
+
+    </script>
+</head>
+<body ng-controller="filtrosCtrl">
+    <div class="well">
+        Testes com filtros {{hoje | date:"dd MMMM, yyyy"}}
+        <hr />
+        <p>
+            Nro. de linhas a exibir:<input type="number" step="1" min="0" max="5" ng-model="numeroLinhas" />
+        </p>
+        <p>
+            Ordernar por: <select ng-model="coluna">
+                <option value="nome">Nome Asc.</option>
+                <option value="-nome">Nome Desc.</option>
+                <option value="sexo">Sexo Asc.</option>
+                <option value="-salario">Salário Desc.</option>
+                <option value="nascimento">Nascimento</option>
+            </select>
+        </p>
+        <table class="table" border="1">
+            <tr>
+                <th>Nome</th>
+                <th>Aniversário</th>
+                <th>Sexo</th>
+                <th>Salário (número)</th>
+                <th>Salário (moeda)</th>
+            </tr>
+            <!--<tr ng-repeat="func in funcionarios | orderBy :'nome' : true">-->
+            <!--<tr ng-repeat="func in funcionarios | orderBy :'+nome'">-->
+            <tr ng-repeat="func in funcionarios | orderBy : coluna">
+                <td>{{func.nome | uppercase}}</td>
+                <td>{{func.nascimento | date:"dd/MM/yyyy"}}</td>
+                <td>{{func.sexo | lowercase}}</td>
+                <td>{{func.salario | number:3}}</td>
+                <td>{{func.salario | currency}}</td>
+            </tr>
+        </table>
+        <h3>Filtro limitTo</h3>
+        Alfabeto: {{alfabeto}}<br />
+        Alfabeto:(limitado em 5 letras): {{alfabeto | limitTo: 5}} <br />
+        Alfabeto:(limitado em 7 letras): {{alfabeto | limitTo: 7:4}}<br />
+        Alfabeto:(limitado em 10 letras caixa alta): {{alfabeto | limitTo: 10 | uppercase}}<br />
+    </div>
+</body>
+</html>
