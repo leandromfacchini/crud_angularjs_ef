@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html ng-app="blog">
+<head>
+    <meta charset="utf-8" />
+    <title>Utilizando rotas</title>
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-route.js"></script>
+    <script src="Scripts/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h3>Trabalhando com rotas no AngularJS</h3>
+            <nav>
+                <a href="/">Home</a>
+                <a href="#/artigos">Artigos</a>
+                <a href="#/sobre">Sobre</a>
+            </nav>
+        </header>
+    </div>
+    <div ng-view>
+        <!--conteudo-->
+    </div>
+    <br /><br /><br />
+    <hr />
+    <footer>
+        Tetes de AngularJS utilizando rotas
+    </footer>
+</body>
+</html>

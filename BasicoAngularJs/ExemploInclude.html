@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html ng-app="Include">
+<head>
+    <meta charset="utf-8" />
+    <title>Trabalhando com include</title>
+    <title></title>
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-locale_pt-br.js"></script>
+
+    <link href="lib/css/bootstrap.css" rel="stylesheet" />
+
+    <script>
+
+        var app = angular.module("Include", []).controller("includeCtrl", function ($scope) {
+
+            $scope.funcionarios = [
+                { nome: "Leandro", sexo: "Masculino", salario: 2500.78 },
+                { nome: "Bruna", sexo: "Feminino", salario: 2890.78 },
+                { nome: "Théo", sexo: "Masculino", salario: 32897.99 },
+                { nome: "Joaquim", sexo: "Masculino", salario: 32899.89 },
+            ];
+
+            $scope.hoje = new Date();
+            $scope.funcionariosView = "FuncionariosTabela.html";
+        });
+
+    </script>
+</head>
+<body ng-controller="includeCtrl">
+    <div class="well">
+        <div ng-include="'Cabecalho.html'"></div>
+        Selecione o modo de visualização:
+        <select ng-model="funcionariosView">
+            <option value="FuncionariosTabela.html">Tabela</option>
+            <option value="FuncionariosLista.html">Lista</option>
+        </select>
+        <hr />
+        <!--<div ng-include="'FuncionariosTabela.html'"></div>-->
+        <div ng-include="funcionariosView"></div>
+    </div>
+</body>
+</html>

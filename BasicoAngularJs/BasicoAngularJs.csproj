@@ -68,18 +68,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Cabecalho.html" />
     <Content Include="Campeonato.html" />
     <Content Include="CampeonatoBrasileiro.html" />
+    <Content Include="Default.html" />
     <Content Include="Exemplo1.html" />
     <Content Include="Exemplo2.html" />
     <Content Include="Exemplo3.html" />
+    <Content Include="ExemploInclude.html" />
     <Content Include="Filtros.html" />
+    <Content Include="FuncionariosLista.html" />
+    <Content Include="FuncionariosTabela.html" />
     <Content Include="Imagens\atlético.jpeg" />
     <Content Include="Imagens\cruzeiro.jpg" />
     <Content Include="Imagens\palmeiras.png" />
     <Content Include="Imagens\saopaulo.jpg" />
     <Content Include="Imagens\vasco.png" />
     <Content Include="lib\angular-locale_pt-br.js" />
+    <Content Include="lib\angular-route.js" />
     <Content Include="lib\angular.js" />
     <Content Include="lib\css\bootstrap-theme.css" />
     <Content Include="lib\css\bootstrap-theme.min.css" />
@@ -90,7 +96,11 @@
     <Content Include="lib\js\bootstrap.min.js" />
     <Content Include="lib\js\npm.js" />
     <Content Include="Ordenacao.html" />
+    <Content Include="lib\main.js" />
     <Content Include="UsandoFilter.html" />
+    <Content Include="views\artigos.html" />
+    <Content Include="views\home.html" />
+    <Content Include="views\sobre.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
