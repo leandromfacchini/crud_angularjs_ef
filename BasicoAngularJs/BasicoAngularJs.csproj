@@ -96,7 +96,7 @@
     <Content Include="lib\js\bootstrap.min.js" />
     <Content Include="lib\js\npm.js" />
     <Content Include="Ordenacao.html" />
-    <Content Include="lib\main.js" />
+    <Content Include="Scripts\main.js" />
     <Content Include="UsandoFilter.html" />
     <Content Include="views\artigos.html" />
     <Content Include="views\home.html" />
@@ -123,9 +123,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Scripts\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

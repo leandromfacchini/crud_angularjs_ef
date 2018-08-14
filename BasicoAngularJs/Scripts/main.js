@@ -6,10 +6,14 @@ app.config(function ($routeProvider) {
 
 console.log('o puto passou aqui');
 
-    $routeProvider
-        .when('/', { templateUrl: 'views/home.html' })
-        .when('/artigos', { templateUrl: 'views/artigos.html', controller: 'ArtigosController' })
-        .when('/sobre', { templateUrl: 'views/sobre.html' })
+    $routeProvider       
+        .when('/', 
+                { templateUrl : '/views/home.html' })
+        .when('/artigos', 
+                { templateUrl : '/views/artigos.html', controller: 'ArtigosController' })
+        .when('/sobre', 
+                { templateUrl : '/views/sobre.html', controller:'SobreController' })
+        .otherwise({redirectTo:"/"})
 });
 
 app.controller('ArtigosController', function ($scope) {
@@ -20,4 +24,11 @@ app.controller('ArtigosController', function ($scope) {
         "Artigo 3",
         "Artigo 4"
     ];
+});
+
+app.controller('SobreController', function ($scope) {
+
+    $scope.titulo = "Sobre";
+$scope.nome = "Leandro fazendo teste";
+$scope.sobre = "Testes com rotas";
 });
