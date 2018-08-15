@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicoAngularJs", "BasicoAngularJs\BasicoAngularJs.csproj", "{BA7C09B8-3D5C-43A0-830A-6F957E12657C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicoAngularJsServices", "BasicoAngularJsServices\BasicoAngularJsServices.csproj", "{C56D53D8-2C44-4E85-90D5-40968A93AE4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BA7C09B8-3D5C-43A0-830A-6F957E12657C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA7C09B8-3D5C-43A0-830A-6F957E12657C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA7C09B8-3D5C-43A0-830A-6F957E12657C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C56D53D8-2C44-4E85-90D5-40968A93AE4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C56D53D8-2C44-4E85-90D5-40968A93AE4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C56D53D8-2C44-4E85-90D5-40968A93AE4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C56D53D8-2C44-4E85-90D5-40968A93AE4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
