@@ -2,9 +2,24 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>AngularJs - ngRoute</title>
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-route.js"></script>
+    <script src="js/main.js"></script>
 </head>
-<body>
-
+<body ng-app="blog">
+    <div class="container">
+        <header>
+            <h3>Trabalhando com ngRoute</h3>
+            <nav>
+                <a href="#!/">Home</a>
+                <a href="#!/artigos">Artigos</a>
+                <a href="#!/sobre">Sobre</a>
+            </nav>
+        </header>
+    </div>
+    <div ng-view>        <!--conteúdo-->    </div>
+    <br /><br /><br />
+    <footer>Testes com ngRoute</footer>
 </body>
 </html>
