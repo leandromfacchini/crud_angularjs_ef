@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicoAngularJsServices", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicoAngularJsRoteamento", "BasicoAngularJsRoteamento\BasicoAngularJsRoteamento.csproj", "{A29492B3-C980-48F4-9F3D-DA8A3E1B363E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularWS", "AngularWS\AngularWS.csproj", "{C7EC4002-4F14-4566-A54B-B11B85C0C91E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A29492B3-C980-48F4-9F3D-DA8A3E1B363E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A29492B3-C980-48F4-9F3D-DA8A3E1B363E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A29492B3-C980-48F4-9F3D-DA8A3E1B363E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7EC4002-4F14-4566-A54B-B11B85C0C91E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7EC4002-4F14-4566-A54B-B11B85C0C91E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7EC4002-4F14-4566-A54B-B11B85C0C91E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7EC4002-4F14-4566-A54B-B11B85C0C91E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

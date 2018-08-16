@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html ng-app="produtosApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Consumindo um WebService</title>
+
+    <script src="lib/angular.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/angular-locale_pt-br.js"></script>
+
+    <link href="lib/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div ng-controller="produtosCtrl" class="jumbotron">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ProductID</th>
+                    <th>ProductName</th>
+                    <th>SupplierID</th>
+                    <th>CategoryID</th>
+                    <th>QuantityPerUnit</th>
+                    <th>UnitPrice</th>
+                    <th>UnitsInStock</th>
+                    <th>UnitsOnOrder</th>
+                    <th>ReorderLevel</th>
+                    <th>Discontinued</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="product in produtos">
+                    <td>{{product.ProductID}}</td>
+                    <td>{{product.ProductName}}</td>
+                    <td>{{product.SupplierID}}</td>
+                    <td>{{product.CategoryID}}</td>
+                    <td>{{product.QuantityPerUnit}}</td>
+                    <td>{{product.UnitPrice | currency}}</td>
+                    <td>{{product.UnitsInStock}}</td>
+                    <td>{{product.UnitsOnOrder}}</td>
+                    <td>{{product.ReorderLevel}}</td>
+                    <td>{{product.Discontinued}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>
